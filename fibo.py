@@ -9,7 +9,7 @@ def fibo(number):
     root = decimal.Decimal(5 ** 0.5)
     fi = (1 + root) / 2
     x = ((fi ** choice) - ((-fi) ** -choice)) / root
-    x = round(x, 2)
+    x = round(x)
     return str(x)
 
 
