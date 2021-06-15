@@ -13,8 +13,8 @@ def fibo(number):
     return str(x)
 
 
+@lru_cache(maxsize=1_000_000)
 def fi_sum(number):
-    decimal.getcontext().prec = 1_000_000
     n = int(number)
     if n <= 0:
         return str(0)
